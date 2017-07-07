@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#1.147
+
+CACHE:
+uploads/staff.json
+uploads/modulechoice.json
+TestJson.txt
+http://localhost:4200/inline.bundle.js
+http://localhost:4200/polyfills.bundle.js
+http://localhost:4200/styles.bundle.js
+http://localhost:4200/vendor.bundle.js
+http://localhost:4200/main.bundle.js
+
+NETWORK:
+*

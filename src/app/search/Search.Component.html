@@ -1,0 +1,55 @@
+<div style="margin-top: 20px;">
+        <nav>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="/search" routerLinkActive="active">Search</a>
+       
+      </nav>
+    </div>
+
+<div style="margin:30px">
+
+<div>
+    
+    <input name="search" placeholder="Search for the User" style="width:150px" #searchTerm>
+    <button (click)="performSearch(searchTerm)">Search</button>
+</div>
+
+  <!--LocalStorage Values  {{retrieveValues | json}}-->
+
+  <div style="clear:both;margin:20px">
+
+        <table class="table table-striped table-bordered text-center" style="background-color:#F4F4F4 ;margin-left: 16px;width: 861px; ">
+            <tr *ngFor="let data of retrieveValues" style="color:#4A4A4A;">
+        <td>
+            {{data.name}}  - {{data.userModelChoice.name}}
+        </td>
+
+        <td>
+                <table class="table table-striped table-bordered text-center" style="background-color:#F4F4F4 ;margin-left: 16px;width: 861px; ">
+            <thead style="background-color:#EBEBEB;">
+                <tr style="font-weight: 700;color: #4A4A4A;">
+                    <td>Premium</td>
+                  <td>Amount</td>
+                   <td>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of data.userModelChoice.resultList" style="color:#4A4A4A;">
+                    <td>{{data.premium}}</td>
+                    <td>{{data.amount}}</td>
+                    <td>{{data.type}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+                </tr>
+        </table>
+ 
+
+  </div>
+
+
+
+
+
+</div>

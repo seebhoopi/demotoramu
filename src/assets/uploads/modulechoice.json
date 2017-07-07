@@ -1,0 +1,57 @@
+[
+
+{
+      "name": "please select a choice",
+      "resultList":[]
+    },
+    {
+      "name": "Extended input",
+      "resultList": [
+        {
+          "premium": "Annual Premium",
+          "amount": "3,020.00",
+          "type": "Nontobacco"
+        },
+        {
+          "premium": "Semi-Annual Premium",
+          "amount": "1,570.00",
+          "type": "Nontobacco"
+        },
+        {
+          "premium": "Quarterly Premium",
+          "amount": "815.00",
+          "type": ""
+        },
+        {
+          "premium": "Monthly EFT/List bill premium",
+          "amount": "259.72",
+          "type": ""
+        }
+      ]
+    },
+    {
+      "name": "Quick Quote",
+      "resultList": [
+        {
+          "premium": "Annual Premium",
+          "amount": "2,020.00",
+          "type": "Nontobacco"
+        },
+        {
+          "premium": "Semi-Annual Premium",
+          "amount": "570.00",
+          "type": "Nontobacco"
+        },
+        {
+          "premium": "Quarterly Premium",
+          "amount": "415.00",
+          "type": ""
+        },
+        {
+          "premium": "Monthly EFT/List bill premium",
+          "amount": "100.72",
+          "type": ""
+        }
+      ]
+    }
+]

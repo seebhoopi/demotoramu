@@ -1,0 +1,57 @@
+<div style="margin-top: 20px;">
+        <nav>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="/search" routerLinkActive="active">Search</a>
+       
+      </nav>
+    </div>
+<div style="margin:20px">
+
+<label> Module Choice: </label>
+<select [ngModel]="selectedDeviceObj" (ngModelChange)="onChangeObj($event)" name="sel3">
+  <option [ngValue]="i" *ngFor="let i of modelChoice">{{i.name}}</option>
+</select>
+
+</div>
+<div style="margin:20px">
+
+<label> User: </label>
+<input id="txtName" [(ngModel)]="username" placeholder="enter a name" />
+
+</div>
+
+<div style="clear:both;margin:20px">
+
+    <table class="table table-striped table-bordered text-center" style="background-color:#F4F4F4 ;margin-left: 16px;width: 861px; ">
+            <thead style="background-color:#EBEBEB;">
+                <tr style="font-weight: 700;color: #4A4A4A;">
+                    <td>Premium</td>
+                  <td>Amount</td>
+                   <td>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of resultList" style="color:#4A4A4A;">
+                    <td>{{data.premium}}</td>
+                    <td>{{data.amount}}</td>
+                    <td>{{data.type}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+  </div>
+
+
+<div style="clear:both;margin:20px">
+      <button (click)="onSubmit()">Store Value in LocalStorage</button>
+      <button (click)="onRetrieve()">Retrieve Value in LocalStorage</button>
+        <button (click)="clearAll()">Clear All Local Storage Value</button>
+</div>
+
+<div style="clear:both;margin:20px">
+<p>
+  LocalStorage Values  {{retrieveValues | json}}
+
+  <button (click)="PostCheck()">Post JSON</button>
+</p>
+</div>
